@@ -1,0 +1,486 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*   font-family: 'Alfa Slab One', cursive;
+
+    font-family: 'Bebas Neue', cursive;
+
+    font-family: 'Montserrat', sans-serif;*/
+a,a:hover{
+  text-decoration: none;
+} 
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+/***********
+ * Header area start
+************/
+
+.banner{
+  background: url('../background.png');
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.header{
+    padding: 25px 0;
+}
+.navber{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  width: 50%;
+}
+.menu{
+  width: 50%;
+  text-align: right;
+}
+.h-menu{
+  padding: 20px 0;
+}
+.h-menu ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 50px;
+  position: relative;
+}
+.h-menu ul li::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background: red;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.h-menu ul li:hover::before{
+  width: 100%;
+  transition: 0.5s;
+}
+.h-menu ul li a{
+     text-transform: uppercase;
+     font-family: 'Bebas Neue', cursive;
+     color: #3d2514;
+     font-size: 24px;
+}
+.h-contect span{
+  font-family: 'Montserrat', sans-serif;
+  color: #3d2514;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+.h-contect img{
+  vertical-align: middle;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.b-right img{
+  max-width: 100%;
+  height: auto;
+}
+.b-left{
+  flex-basis: 50%;
+  margin-top: 135px;
+}
+.b-right{
+  flex-basis: 50%;
+  position: relative;
+}
+.prize-tag{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.b-left p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 21px;
+    border: 2px dashed #3d2514;
+    padding: 8px 15px;
+    font-weight: 100;
+    display: inline-block;
+    color: #3d2514;
+}
+.b-left h1 {
+    font-family: 'Alfa Slab One', cursive;
+    color: #3d2514;
+    font-size: 115px;
+    text-shadow: 4px 4px #fee8bc;
+    text-transform: uppercase;
+}
+.b-left h2 {
+    font-size: 55px;
+    font-family: 'Alfa Slab One', cursive;
+    color: #3d2514;
+    text-shadow: 4px 4px #fee8bc;
+}
+
+
+
+/*Services area start*/
+
+.services{
+  padding: 60px 0;
+  width: 100%;
+
+}
+.service-items{
+  display: flex;
+}
+.service-items img{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.service-items img:hover{
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+.s-left, .s-right{
+  flex-basis: 50%;
+}
+.s-containt{
+  margin: 20px;
+  position: relative;
+}
+.img-text {
+    position: absolute;
+    top: 16px;
+    left: 28px;
+    color: white;
+    line-height: 43px;
+  /*  letter-spacing: 1px;*/
+}
+.img-text h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    font-weight: 400;
+}
+.img-text h5 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.s-line{
+  width: 165px;
+    line-height: 38px;
+}
+.secend{
+  margin-bottom: 28px;
+}
+
+
+
+
+
+.burger-pic{
+  padding: 60px 0;
+  width: 100%;
+}
+
+.pic-text{
+  text-align: center;
+}
+.pic-text span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    background: #ffc045;
+    padding: 6px 19px;
+    color: #3d2514;
+}
+.pic-text h2 {
+    color: #3d2514;
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 50px;
+    margin-top: 45px;
+    letter-spacing: 2px;
+}
+.pic-text p {
+    font-size: 16px;
+    color: #3d2514;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 27px;
+}
+
+
+
+
+
+
+.gallary{
+  display: flex;
+  margin: 100px 0;
+}
+
+.burger-item{
+  text-align: center;
+
+}
+.burger-item img{
+  width: 100%;
+  height: auto;
+  transition: 0.2s;
+}
+.burger-item img:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.burger-item h3{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 38px;
+  color: #3d2514;
+}
+.burger-item p{
+   font-size: 16px;
+    color: #3d2514;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 22px;
+
+}
+.burger-item button {
+    font-size: 16px;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    background: #bf2222;
+    padding: 13px 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    margin: 25px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.burger-item button:hover{
+  background: #3d2514;
+  color: #ffc045;
+  transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+.slaider-area{
+  padding: 60px 0;
+  width: 100%;
+}
+.slaider-content{
+  /*display: flex;*/
+  padding: 25px 20px;
+    box-shadow: 10px 10px 38px rgb(0 0 0 / 50%);
+}
+.s-content{
+  display: flex;
+}
+.slaider-left, .slaider-right{
+  flex-basis: 50%;
+}
+.slaider-left h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #000;
+    margin-top: 16px;
+}
+.slaider-left h2 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 39px;
+    color: #3d2514;
+    font-weight: 100;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.slaider-left p{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   color: #3d2514;
+}
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    display: none;
+}
+.owl-dots {
+    position: absolute;
+    left: 24px;
+    bottom: 19px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffc045;
+}
+
+
+
+
+.booking{
+  padding: 0 60px;
+}
+
+.set-boking {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 47vh;
+}
+.input-all{
+display: inline-block;
+}
+
+.input-1, .input-2, .input-3{
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.set-boking h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    color: #3d2514;
+    padding-top: 50px;
+}
+.set-boking h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    padding: 0px 0px 40px 0px;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 3px;
+    color: #3d2514;
+}
+.box {
+    padding: 23px 157px 18px 15px;
+    border: 1px solid #e5d7d7;
+    border-radius: 5px;
+    margin-left: 17px;
+}
+.box::placeholder{
+    text-align: left;
+    text-transform: uppercase;
+    text-align:left ;
+    color: rgb(46, 44, 44);
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    color: #808080;
+    font-size: 16px;
+}
+.btn {
+    margin-left: 18px;
+    padding: 0px 97px 0px 96px;
+    background-color: #bf2222;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background: #3d2514;
+  color: #ffc045;
+  transition: 0.3s;
+}
+
+/*Footer area start*/
+.footer{
+  padding: 60px 0;
+  width: 100%;
+}
+.footer-section{
+  background: url(../bottom.png);
+  width: 100%;
+  display: flex;
+  height: auto;
+}
+.f-left {
+    width: 70%;
+    padding-top: 65px;
+    padding-left: 43px;
+}
+.f-left img{
+  width: 61%;
+  padding-bottom: 35px;
+}
+.f-left p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 148px;
+    line-height: 25px;
+    margin-bottom: 150px;
+}
+
+.f-right {
+    width: 30%;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    margin-top: 259px;
+    margin-left: 16px;
+    line-height: 40px;
+}
+.copyright {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+.f-right h5 {
+    font-size: 18px;
+    /*letter-spacing: 3px;*/
+    padding-left: 47px;
+    padding: 20px 0;
+    font-weight: 200;
+}
+.fa-map-marker{
+  padding-right: 29px;
+  font-size: 40px;
+}
+.fa-envelope {
+    font-size: 28px;
+   /* padding-right: 5px;*/
+}
+.f-right span{
+  font-size: 16px;
+    letter-spacing: 1px;
+    padding-left: 20px;
+}
+.icon {
+    padding: 70px 0px 0 135px;
+}
+.icon ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+.icon ul li i {
+    color: black;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
